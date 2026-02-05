@@ -124,5 +124,3 @@ export const ThemeToggle = () => {
 ## 📄 Ліцензія
 
 MIT
-
-```
