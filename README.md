@@ -59,7 +59,7 @@ body {
 // src/main.tsx або src/App.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ThemeProvider } from './features/theme'; // Імпорт з index.ts
+import { ThemeProvider } from './ThemeProvider';
 import App from './App';
 import './index.css';
 
@@ -79,7 +79,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 ```tsx
 // src/components/ThemeToggle.tsx
-import { useTheme } from '../features/theme';
+import { useTheme } from './hooks';
 
 export const ThemeToggle = () => {
   const { theme, toggleTheme, isDark } = useTheme();
